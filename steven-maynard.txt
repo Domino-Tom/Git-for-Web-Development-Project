@@ -172,8 +172,32 @@ https://codepen.io/DominoTom/pen/rNaqRXX
 Stretch Questions
 
 1. What is the difference between an inline element and a block element?
+
+	Inline elements do not disrupt the flow of content they are nested within.
+	Block elements will break to a new line and occupy the full width of the 
+	parent element by default and are effected by height and width properties.
+
 2. What happens when an element is positioned absolutely? 
+
+	It is positioned to a specific location on the page relative to its nearest non-statically positioned ancestor.
+
 3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+	display: inline-block
+
 4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+	<p>, <div>, and <ul> are block by default. <a> and <span> are inline by default. <img> is inline-block by default.
+
 5. In your own words, explain the box model. What is the fix for the box model? 
+
+	The box-model describes different features of an element that determine how much "space" it occupies. It is made of four layers:
+	The content layer is the inner-most and is what is being displayed by the element.
+	The next is padding, which is the space between the content and the border of the element.
+	The border is invisible by default, but can be displayed in a variety of ways and sizes.
+	The element's margin is the space between border and any surrounding elements.
+
+	Once upon a time, the box-model was quirky to work with, as you could establish a size for the box, but it would be altered by
+	any changes to the padding, content, or border. Using box-sizing: border box, such things will alter inside of the perimeter established,
+	making it much easier to predict how changes in code will effect the display of in element.
 
